@@ -11,7 +11,7 @@ const Navbar = () => {
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">ATLA API</a>
+                        <a class="navbar-brand" href="/">ATLA API</a>
                     </div>
                     <ul class="nav navbar-nav">
 
@@ -24,8 +24,8 @@ const Navbar = () => {
                     <NavLink to="/fireNation" activeStyle>
                         Fire Nation Charater (Random)
                     </NavLink>
-                    <NavLink to="/earth" activeStyle>
-                        EarthBending
+                    <NavLink to="/earthKingdom" activeStyle>
+                        Earth Kingdom Charater (Random)
                     </NavLink>
                     <NavLink to="/airNomads" activeStyle>
                         Air Nomads Charater (Random)

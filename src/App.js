@@ -8,7 +8,7 @@ import RandomChar from './pages/randomChar';
 import WaterTribe from './pages/waterTribe';
 import FireNation from './pages/fireNation';
 import AirNomads from './pages/airNomads';
-// import Earth from './pages/earth';
+import EarthKingdom from './pages/earthKingdom';
 
 // for multi page stuff : https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
   
@@ -20,7 +20,7 @@ return (
         <Route path='/' element={<RandomChar />} />
         <Route path='/waterTribe' element={<WaterTribe/>} />
         <Route path='/fireNation' element={<FireNation/>} />
-        {/* <Route path='/earth' element={<Earth/>} /> */}
+        <Route path='/earthKingdom' element={<EarthKingdom/>} />
         <Route path='/airNomads' element={<AirNomads/>} />
     </Routes>
     </Router>

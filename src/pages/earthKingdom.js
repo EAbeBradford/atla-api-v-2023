@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-const AirNomads = () => {
+const EarthKingdom = () => {
   const [Data, setData] = useState({
     name: '',
     affiliation: '',
@@ -11,21 +11,21 @@ const AirNomads = () => {
 
   })
   useEffect(() => {
-    axios.get('https://last-airbender-api.fly.dev/api/v1/characters?affiliation=Air+Nomads')
+    axios.get('https://last-airbender-api.fly.dev/api/v1/characters?affiliation=Earth+Kingdom')
       .then(res => {
         console.log('Response from main API: ', res)
-        console.log('Air Nomads Data: ', res.data)
+        console.log('earth Kingdom Data: ', res.data)
         let index = Math.floor(Math.random()* res.data.length)
-        let airData = res.data[index];
+        let earthData = res.data[index];
         
-        console.log('random air: ', airData)
+        console.log('random earth: ', earthData)
         
-        setData({ name: airData.name, 
-          pioneers: airData.pioneers, 
-          affiliation: airData.affiliation, 
-          allies: airData.allies, 
-          enemies: airData.enemies, 
-          photoUrl: airData.photoUrl
+        setData({ name: earthData.name, 
+          pioneers: earthData.pioneers, 
+          affiliation: earthData.affiliation, 
+          allies: earthData.allies, 
+          enemies: earthData.enemies, 
+          photoUrl: earthData.photoUrl
          })
       })
       .catch(err => {
@@ -48,4 +48,4 @@ const AirNomads = () => {
   );
 };
 
-export default AirNomads;
+export default EarthKingdom;
