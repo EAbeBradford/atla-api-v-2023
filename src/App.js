@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route}
 import RandomChar from './pages/randomChar';
 import WaterTribe from './pages/waterTribe';
 import FireNation from './pages/fireNation';
-// import Air from './pages/air';
+import AirNomads from './pages/airNomads';
 // import Earth from './pages/earth';
 
 // for multi page stuff : https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
@@ -21,7 +21,7 @@ return (
         <Route path='/waterTribe' element={<WaterTribe/>} />
         <Route path='/fireNation' element={<FireNation/>} />
         {/* <Route path='/earth' element={<Earth/>} /> */}
-        {/* <Route path='/air' element={<Air/>} /> */}
+        <Route path='/airNomads' element={<AirNomads/>} />
     </Routes>
     </Router>
 );

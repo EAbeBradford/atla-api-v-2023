@@ -27,8 +27,8 @@ const Navbar = () => {
                     <NavLink to="/earth" activeStyle>
                         EarthBending
                     </NavLink>
-                    <NavLink to="/air" activeStyle>
-                        AirBending
+                    <NavLink to="/airNomads" activeStyle>
+                        Air Nomads Charater (Random)
                     </NavLink>
                     </ul>
                 </div>
